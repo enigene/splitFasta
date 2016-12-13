@@ -16,7 +16,7 @@ NR == 1 {
   fbase = FILENAME;
   fext = FILENAME;
   sub(/[.]{1}[^.]+$/, "", fbase);
-  sub(/.*[.]/, "", fext);
+  sub(/[^.]*[.]/, "", fext);
 }
 {
   if ($0 != "") {
